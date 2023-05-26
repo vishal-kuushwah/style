@@ -1,0 +1,199 @@
+:root{
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0058;
+    --red600:#f9f6ff;
+    --body:#f9f6ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+section {
+    scroll-margin: 100px;
+}
+.container{
+    max-width: 1200px;
+    /* border: 2px solid rebeccapurple; */
+    margin: 0 auto;
+} 
+ul{
+text-decoration: none;
+    display: flex;
+    /* border: 2px solid red; */
+    color: white;
+    list-style: none;
+    gap: 20px;
+}
+ul a{
+    text-decoration: none;
+}
+nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 400;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+    color: white;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+}
+
+.hero_section{
+    background-image: url(images/Frame\ 1.png);
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+.video_section ,
+.hero_section{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero_section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero_section h1{
+    font-size: 96px;
+}
+.hero_section h3{
+    font-size: 32px;
+}
+/* music section s */
+.music_section{
+    padding-top: 50px;
+    background-color: #281154;
+    color: white;
+}
+.music_section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.ipad-iphone-img{
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+
+}
+.primary-btn
+{
+    background-color: red;
+    color: white;
+}
+.secondary_btn{
+    color: white;
+    background-color: var(--purple300);
+}
+.about-music{
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.video_section{
+    background-image: url(images/th.jpg);
+    min-height: 800px;
+    display: grid;
+    place-items: center  ;
+    color: black;
+    text-align: center;
+}
+.video_section .container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    margin-top: -200px;
+
+}
+.gift-section{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+.gift_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer_upper{
+    background-color: #270082;
+    padding:20px;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+/* .footer .container */
+.footer_links ul{
+    display:block;
+}
+.footer_upper h4{
+padding-bottom: 10px;
+border-bottom: 2px solid white;
+margin-bottom: 10px;
+}
+.footer_lower{
+    display: flex;
+    color: white;
+    justify-content: center;
+background-color: #281154;
+}
+@media screen and (max-width: 600px) {
+
+.logo{
+    font-size: 20px;
+}
+.hero_section h1{
+    font-size: 23px;
+}
+.nav ul li{
+    font-size: 15px;
+    margin-right: 23px;
+}
+}
